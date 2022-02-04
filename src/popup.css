@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  width: 600px;
+  height: 400px;
+  overflow: scroll;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  width: 600px;
+  height: 400px;
+  overflow: scroll;
+  line-height: 1.5;
+  font-family: -apple-system, "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
+}
+
+ul,
+li {
+  all: unset;
+}
+
+#root {
+  isolation: isolate;
+  overflow: scroll;
+}
+
+.cookie-domain {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cookie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cookie-item {
+  display: flex;
+  cursor: pointer;
+  gap: 8px;
+  padding: 4px 8px;
+}
+
+.cookie-item__name {
+  width: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+
+.cookie-item__value {
+  width: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}

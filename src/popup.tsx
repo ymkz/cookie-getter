@@ -31,7 +31,7 @@ const App = ({
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
   if (root && tab.url) {
     const domain = new URL(tab.url).hostname
-    const cookies = await chrome.cookies.getAll({ domain })
+    const cookies = await chrome.cookies.getAll({ url: tab.url })
     render(<App domain={domain} cookies={cookies} />, root)
   }
 })()

@@ -11,7 +11,7 @@
 html {
   width: 600px;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   margin: 0;
   width: 600px;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
   line-height: 1.5;
   font-family: -apple-system, "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
@@ -32,7 +32,6 @@ li {
 
 #root {
   isolation: isolate;
-  overflow: scroll;
 }
 
 .cookie-domain {
